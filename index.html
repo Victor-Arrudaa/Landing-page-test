@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trilha Financeira</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <style>
+            /* Estilos personalizados */
+            body {
+                font-family: "Roboto", sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            /* Estilo para tornar os links sublinhados apenas ao passar o mouse */
+            a {
+                text-decoration: none;
+                transition: all 0.3s ease-in-out;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body class="bg-gray-900 text-white">
+        <!-- Navbar -->
+        <nav class="bg-gray-800 p-4">
+            <div class="container mx-auto flex justify-center items-center">
+                <h1 class="text-3xl font-bold">Trilha Financeira</h1>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero bg-blue-700 text-white py-16">
+            <div class="container mx-auto text-center gap-10">
+                <h2 class="text-3xl font-bold mb-2">
+                    Transforme seus sonhos em realidade financeira
+                </h2>
+                <p class="text-lg mb-4">
+                    Seja qual for seu objetivo financeiro, estamos aqui para
+                    ajudar você a alcançá-lo.
+                </p>
+                <button
+                    class="bg-gray-800 text-yellow-500 text-lg font-bold px-6 py-3 rounded-full shadow-md hover:bg-gray-900 transition duration-300"
+                >
+                    Comece agora
+                </button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about py-10 px-40 border-t-2">
+            <div class="container mx-auto text-center max-w-4xl">
+                <h2 class="text-2xl text-yellow-400 pb-6 font-bold mb-4">
+                    Sobre a Trilha Financeira
+                </h2>
+                <p class="text-lg mb-4">
+                    A Trilha Financeira é uma plataforma dedicada a ajudar
+                    pessoas a dominar suas finanças pessoais, investimentos e
+                    planejamento financeiro para alcançar a independência
+                    financeira. Oferecemos cursos online, orientação
+                    personalizada e recursos educacionais para capacitar nossos
+                    alunos a tomar as melhores decisões financeiras para seu
+                    futuro.
+                </p>
+                <p class="text-lg">
+                    Nossa missão é fornecer educação financeira acessível e
+                    prática para todos, independentemente de sua situação
+                    financeira atual, e capacitá-los a construir um futuro
+                    financeiro seguro e próspero.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mentor Section -->
+        <section class="mentor bg-gray-900 text-white py-10 px-24 border-t-2">
+            <div class="container mx-auto text-center max-w-4xl">
+                <h2 class="text-2xl text-yellow-400 font-bold mb-4">
+                    Conheça nosso Mentor
+                </h2>
+                <img
+                    src="./412542162_692120086342270_6601791189918602591_n.jpeg"
+                    alt="Foto de Alexandre de França"
+                    class="mx-auto rounded-full mb-2 w-40 h-40 object-fill"
+                />
+                <h3 class="text-xl font-bold pb-10">Alexandre de França</h3>
+                <p class="text-lg mb-2">
+                    Formado em Ciências Contábeis pela Universidade ABC,
+                    Alexandre é um especialista em finanças pessoais e
+                    investimentos com mais de 15 anos de experiência no setor
+                    financeiro. Ele é apaixonado por ajudar pessoas a alcançar
+                    seus objetivos financeiros e construir um futuro financeiro
+                    sólido.
+                </p>
+                <p class="text-lg">
+                    Como mentor da Trilha Financeira, Alexandre compartilha seu
+                    conhecimento e expertise para orientar nossos alunos em sua
+                    jornada financeira e ajudá-los a alcançar o sucesso.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services py-10 px-24 border-t-2 border-b-2">
+            <div class="container mx-auto text-center pb-6">
+                <h2 class="text-2xl text-yellow-400 font-bold mb-4 pb-6">
+                    Nossos Serviços
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div
+                        class="service bg-gray-800 text-white p-6 rounded-lg shadow-md"
+                    >
+                        <h3 class="text-lg font-bold mb-2">Cursos Online</h3>
+                        <p>
+                            Acesso a uma variedade de cursos online sobre
+                            finanças pessoais, investimentos, planejamento
+                            financeiro e muito mais.
+                        </p>
+                    </div>
+                    <div
+                        class="service bg-gray-800 text-white p-6 rounded-lg shadow-md"
+                    >
+                        <h3 class="text-lg font-bold mb-2">
+                            Orientação Personalizada
+                        </h3>
+                        <p>
+                            Sessões de orientação personalizada com nossos
+                            especialistas financeiros para ajudá-lo a alcançar
+                            seus objetivos financeiros.
+                        </p>
+                    </div>
+                    <div
+                        class="service bg-gray-800 text-white p-6 rounded-lg shadow-md"
+                    >
+                        <h3 class="text-lg font-bold mb-2">
+                            Recursos Educacionais
+                        </h3>
+                        <p>
+                            Acesso a uma variedade de recursos educacionais,
+                            incluindo artigos, guias, vídeos e ferramentas para
+                            ajudá-lo em sua jornada financeira.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta bg-blue-900 text-white py-10 px-24">
+            <div class="container mx-auto text-center">
+                <h2 class="text-2xl font-bold mb-2">
+                    Pronto para começar sua jornada financeira?
+                </h2>
+                <p class="text-lg mb-4">
+                    Entre em contato conosco hoje mesmo e descubra como podemos
+                    ajudar.
+                </p>
+                <button
+                    class="bg-gray-800 text-yellow-500 text-lg font-bold px-6 py-3 rounded-full shadow-md hover:bg-gray-900 transition duration-300"
+                >
+                    Entrar Agora
+                </button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-4">
+            <div class="container mx-auto text-center">
+                <p>
+                    &copy; 2024 Trilha Financeira. Todos os direitos reservados.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
