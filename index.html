@@ -12,45 +12,96 @@
             href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
             rel="stylesheet"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
         <style>
             /* Estilos personalizados */
             body {
                 font-family: "Roboto", sans-serif;
                 margin: 0;
                 padding: 0;
+                color: #d9ddde; /* Texto simples */
+
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                background-color: #090c10; /* Fundo escuro */
+                color: #d9ddde;
             }
 
             /* Estilo para tornar os links sublinhados apenas ao passar o mouse */
             a {
                 text-decoration: none;
                 transition: all 0.3s ease-in-out;
+                color: #d9ddde; /* Links */
             }
 
             a:hover {
                 text-decoration: underline;
             }
+
+            /* Estilo para realçar os títulos */
+            h1 {
+                font-family: "Black Ops One", system-ui;
+            }
+
+            h2,
+            h1 {
+                color: #b5f507; /* Destaque */
+            }
+
+            /* Estilo para os botões */
+            button {
+                transition: all 0.3s ease-in-out;
+                background-color: #b5f507; /* Destaque */
+                color: #090c10; /* Fundo escuro */
+            }
+
+            button:hover {
+                transform: translateY(-2px) scale(1.03); /* Destaque mais escuro */
+            }
+
+            /* Estilo para os ícones */
+            .icon {
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+
+            /* Estilo para os efeitos de gradiente */
+
+            /* Estilo para os serviços */
+            .service {
+                border: 2px solid #ddd;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .service:hover {
+                border-color: #8f3dff; /* Destaque */
+                transform: translateY(-5px);
+            }
         </style>
     </head>
-    <body class="bg-gray-900 text-white">
+    <body class="">
         <!-- Navbar -->
-        <nav class="bg-gray-800 p-4">
+        <nav class="py-4">
             <div class="container mx-auto flex justify-center items-center">
                 <h1 class="text-3xl font-bold">Trilha Financeira</h1>
             </div>
         </nav>
 
         <!-- Hero Section -->
-        <section class="hero bg-blue-700 text-white py-16">
-            <div class="container mx-auto text-center gap-10">
+        <section class="hero gradient-bg text-white py-10">
+            <div class="container mx-auto text-center">
                 <h2 class="text-3xl font-bold mb-2">
                     Transforme seus sonhos em realidade financeira
                 </h2>
                 <p class="text-lg mb-4">
-                    Seja qual for seu objetivo financeiro, estamos aqui para
-                    ajudar você a alcançá-lo.
+                    Construa um futuro financeiro sólido e próspero.
                 </p>
                 <button
-                    class="bg-gray-800 text-yellow-500 text-lg font-bold px-6 py-3 rounded-full shadow-md hover:bg-gray-900 transition duration-300"
+                    class="px-6 py-3 rounded-full shadow-md transition duration-300 font-bold text-lg"
                 >
                     Comece agora
                 </button>
@@ -58,66 +109,56 @@
         </section>
 
         <!-- About Section -->
-        <section class="about py-10 px-40 border-t-2">
-            <div class="container mx-auto text-center max-w-4xl">
-                <h2 class="text-2xl text-yellow-400 pb-6 font-bold mb-4">
+        <section class="about py-10 px-40">
+            <div class="container mx-auto text-center">
+                <h2 class="text-2xl font-bold mb-4">
                     Sobre a Trilha Financeira
                 </h2>
                 <p class="text-lg mb-4">
                     A Trilha Financeira é uma plataforma dedicada a ajudar
                     pessoas a dominar suas finanças pessoais, investimentos e
                     planejamento financeiro para alcançar a independência
-                    financeira. Oferecemos cursos online, orientação
-                    personalizada e recursos educacionais para capacitar nossos
-                    alunos a tomar as melhores decisões financeiras para seu
-                    futuro.
+                    financeira.
                 </p>
                 <p class="text-lg">
-                    Nossa missão é fornecer educação financeira acessível e
-                    prática para todos, independentemente de sua situação
-                    financeira atual, e capacitá-los a construir um futuro
-                    financeiro seguro e próspero.
+                    Oferecemos cursos online, orientação personalizada e
+                    recursos educacionais para capacitar nossos alunos a tomar
+                    as melhores decisões financeiras para seu futuro.
                 </p>
             </div>
         </section>
 
         <!-- Mentor Section -->
-        <section class="mentor bg-gray-900 text-white py-10 px-24 border-t-2">
-            <div class="container mx-auto text-center max-w-4xl">
-                <h2 class="text-2xl text-yellow-400 font-bold mb-4">
-                    Conheça nosso Mentor
-                </h2>
+        <section class="mentor bg-gray-900 text-white py-10 px-40">
+            <div
+                class="container mx-auto text-center mentor-info rounded-lg p-8"
+            >
+                <h2 class="text-2xl font-bold mb-4">Conheça nosso Mentor</h2>
                 <img
                     src="./412542162_692120086342270_6601791189918602591_n.jpeg"
                     alt="Foto de Alexandre de França"
-                    class="mx-auto rounded-full mb-2 w-40 h-40 object-fill"
+                    class="mx-auto rounded-full mb-4 h-40 w-40"
                 />
-                <h3 class="text-xl font-bold pb-10">Alexandre de França</h3>
-                <p class="text-lg mb-2">
+                <h3 class="text-xl font-bold mb-10">Alexandre de França</h3>
+                <p class="text-lg">
                     Formado em Ciências Contábeis pela Universidade ABC,
                     Alexandre é um especialista em finanças pessoais e
-                    investimentos com mais de 15 anos de experiência no setor
-                    financeiro. Ele é apaixonado por ajudar pessoas a alcançar
-                    seus objetivos financeiros e construir um futuro financeiro
-                    sólido.
+                    investimentos com mais de 15 anos de experiência.
                 </p>
                 <p class="text-lg">
-                    Como mentor da Trilha Financeira, Alexandre compartilha seu
-                    conhecimento e expertise para orientar nossos alunos em sua
-                    jornada financeira e ajudá-los a alcançar o sucesso.
+                    Compartilha conhecimento e expertise para orientar nossos
+                    alunos em sua jornada financeira.
                 </p>
             </div>
         </section>
 
         <!-- Services Section -->
-        <section class="services py-10 px-24 border-t-2 border-b-2">
-            <div class="container mx-auto text-center pb-6">
-                <h2 class="text-2xl text-yellow-400 font-bold mb-4 pb-6">
-                    Nossos Serviços
-                </h2>
+        <section class="services py-10 px-24">
+            <div class="container mx-auto text-center">
+                <h2 class="text-2xl font-bold mb-4">Nossos Serviços</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div
-                        class="service bg-gray-800 text-white p-6 rounded-lg shadow-md"
+                        class="service bg-gray-900 text-white p-6 rounded-lg shadow-md"
                     >
                         <h3 class="text-lg font-bold mb-2">Cursos Online</h3>
                         <p>
@@ -127,7 +168,7 @@
                         </p>
                     </div>
                     <div
-                        class="service bg-gray-800 text-white p-6 rounded-lg shadow-md"
+                        class="service bg-gray-900 text-white p-6 rounded-lg shadow-md"
                     >
                         <h3 class="text-lg font-bold mb-2">
                             Orientação Personalizada
@@ -139,7 +180,7 @@
                         </p>
                     </div>
                     <div
-                        class="service bg-gray-800 text-white p-6 rounded-lg shadow-md"
+                        class="service bg-gray-900 text-white p-6 rounded-lg shadow-md"
                     >
                         <h3 class="text-lg font-bold mb-2">
                             Recursos Educacionais
@@ -155,7 +196,7 @@
         </section>
 
         <!-- Call to Action Section -->
-        <section class="cta bg-blue-900 text-white py-10 px-24">
+        <section class="cta gradient-bg text-white py-10">
             <div class="container mx-auto text-center">
                 <h2 class="text-2xl font-bold mb-2">
                     Pronto para começar sua jornada financeira?
@@ -165,9 +206,9 @@
                     ajudar.
                 </p>
                 <button
-                    class="bg-gray-800 text-yellow-500 text-lg font-bold px-6 py-3 rounded-full shadow-md hover:bg-gray-900 transition duration-300"
+                    class="px-8 py-4 rounded-full shadow-md transition duration-300 font-bold text-lg"
                 >
-                    Entrar Agora
+                    Contate-nos
                 </button>
             </div>
         </section>
